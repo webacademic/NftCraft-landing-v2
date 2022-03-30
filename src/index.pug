@@ -1,5 +1,5 @@
-include pug/mixins/image
-
+mixin image(name)
+    img.src(src=require(`../src/images/${name}.png`) alt=name)
 doctype html
 html(lang='en')
     include pug/head
