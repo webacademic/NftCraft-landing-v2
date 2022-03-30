@@ -1,0 +1,11 @@
+.partners {
+    padding-bottom: 124px;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    img{
+        min-width: rem(300);
+    }
+}
