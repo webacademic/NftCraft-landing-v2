@@ -1,5 +1,6 @@
-mixin image(name)
-    img.src(src=require(`../src/images/${name}.png`) alt=name)
+mixin image(name, title)
+    -title = title || name;
+    img.src(src=require(`../src/images/${name}.png`) alt=title)
 doctype html
 html(lang='en')
     include pug/head

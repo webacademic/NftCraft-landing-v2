@@ -26,6 +26,14 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $bgColor;
+  color: $defaultColor;
+}
+
+main{
+  width: 100%;
+  max-width: $desktopWidth;
+  margin: 0 auto;
 }
 
 .container {
