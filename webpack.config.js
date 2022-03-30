@@ -12,7 +12,7 @@ module.exports = {
     output: {
         filename: '[name].[contenthash].js',
         assetModuleFilename: "assets/[hash][ext][query]",
-        clean: true,
+        clean: false,
     },
     devServer: {
         open: true,
@@ -21,7 +21,6 @@ module.exports = {
             watch: true
         }
     },
-    devtool: 'source-map',
     optimization: {
         splitChunks: {
             chunks: 'all',
