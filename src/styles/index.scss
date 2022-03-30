@@ -43,3 +43,17 @@ body {
     max-width: 100%;
   }
 }
+
+
+// Import section
+
+@import 'section/header';
+@import 'section/main';
+@import 'section/universe';
+@import 'section/game-list';
+@import 'section/showcase';
+@import 'section/free';
+@import 'section/achievements';
+@import 'section/offer';
+@import 'section/partners';
+@import 'section/footer';

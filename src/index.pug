@@ -2,6 +2,14 @@ doctype html
 html(lang='en')
     include pug/head
     body
-        section 
-            .container
-                h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam!
+        include pug/section/header
+        main 
+            include pug/section/main
+            include pug/section/universe
+            include pug/section/game-list
+            include pug/section/showcase
+            include pug/section/free
+            include pug/section/achievements
+            include pug/section/offer
+            include pug/section/partners
+        include pug/section/footer
