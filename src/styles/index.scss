@@ -8,12 +8,6 @@ html {
   color: $mainFontColor;
   height: 100%;
   @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
     font-size: 14px;
   }
 }
@@ -30,10 +24,8 @@ body {
   color: $defaultColor;
 }
 
-main{
-  width: 100%;
-  max-width: $desktopWidth;
-  margin: 0 auto;
+main {
+  overflow: hidden;
 }
 
 .container {
@@ -56,6 +48,30 @@ b {
   color: $primaryColor;
 }
 
+a {
+  text-decoration: none
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: rem(28);
+  text-align: center;
+  text-transform: uppercase;
+  color: $mainFontColor;
+
+  &.primary {
+      background-color: $primaryColor;
+  }
+
+  &.neutral {
+      background-color: $neutralColor;
+  }
+}
 
 // Import section
 
