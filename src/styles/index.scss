@@ -3,12 +3,31 @@
 @import 'utils/mixins';
 @import 'utils/fonts';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
+}
+
+@media screen and (min-width: $lgDesktopWidth) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: $desktopWidth) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  html {
     font-size: 14px;
   }
 }
@@ -34,10 +53,16 @@ main {
   margin: 0 auto;
   padding: 0 rem(20);
   max-width: $desktopWidth;
+  @media screen and (min-width: $lgDesktopWidth) {
+    max-width: $lgDesktopWidth;
+  }
   @media screen and (max-width: $desktopWidth) {
     max-width: $smDesktopWidth;
   }
   @media screen and (max-width: $smDesktopWidth) {
+    max-width: $lgTableWidth;
+  }
+  @media screen and (max-width: $lgTableWidth) {
     max-width: $tableWidth;
   }
   @media screen and (max-width: $tableWidth) {
