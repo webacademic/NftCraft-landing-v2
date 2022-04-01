@@ -50,6 +50,12 @@
                 transform: scale(1.1);
             }
         }
+        i {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 120%;
+            color: rgba(255, 255, 255, 0.4);
+        }
         span, a {
             position: relative;
             display: block;
