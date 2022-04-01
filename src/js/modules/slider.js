@@ -112,7 +112,7 @@ function slider({container, slide, nextArrow, prevArrow, wrapper, field, nav}) {
     });
 
     function deleteNotDigits(str) {
-        return +str.replace(/\D/g, '');
+        return +str.slice(0, -2);
     }
 }
 

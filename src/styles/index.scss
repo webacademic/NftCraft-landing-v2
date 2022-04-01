@@ -75,6 +75,7 @@ b {
 }
 
 a {
+  color: #fff;
   text-decoration: none
 }
 
@@ -107,6 +108,7 @@ a {
 @import 'sections/game-list';
 @import 'sections/showcase';
 @import 'sections/free';
+@import 'sections/tokenomics';
 @import 'sections/achievements';
 @import 'sections/offer';
 @import 'sections/partners';
