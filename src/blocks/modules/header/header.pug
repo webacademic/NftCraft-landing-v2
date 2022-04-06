@@ -1,32 +1,32 @@
 header.header
   .container
-    a.header__logo(href='https://nftcraft.game/' target="_blank")
-      img(src='.././img/header/logo.png' alt='Logo NFT Craft')
+    a.header__logo(href='/')
+      img(src='./img/header/logo.png' alt='Logo NFT Craft')
 
-    .lang
-      span.ru Russian
-      ul
-        li
-          a.en(href='/en/') English
+    .lang(data-lang-selector lang-value="en")
+      span.lang-selected
+      ul.lang-list
+        li.lang-list__item
+          a.ru(data-lang-pick="ru") Russian
+        li.lang-list__item
+          a.en(data-lang-pick="en") English
     nav.header__nav
       ul
+        //- li
+        //-   a(href='https://mine.nftcraft.game' data-lang="menu-metaCraft") MetaCraft
         li
-          a(href='https://nftcraft.game' target="_blank") NFTcraft
+          a(href='https://tweb.nftcraft.game/') NFTcraft
         li
-          a(href='https://unity.nftcraft.game' target="_blank") Unity	
-        li
-          a(href='https://mine.nftcraft.game' target="_blank") MetaCraft
+          a(href='https://unity.nftcraft.game/') Unity
+        li 
+          a(href="https://mine.nftcraft.game/") MetaCraft 
         li.beta
-          a(href='https://invest.nftcraft.game' target="_blank") Invest
+          a(href='https://invest.nftcraft.game/')             
             i
             i
             i
             i
-      .lang
-        span.ru Russian
-        ul
-          li
-            a.en(href='/en/') English
+            p(data-lang="menu-nct")
     input#checkbox.mobile-menu__checkbox(type='checkbox')
     label.mobile-menu__btn(for='checkbox')
       span.mobile-menu__icon

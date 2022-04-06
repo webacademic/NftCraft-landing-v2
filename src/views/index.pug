@@ -6,14 +6,17 @@ block variables
 
 block content
 	include ../blocks/modules/header/header
-	include ../blocks/modules/main/main
-	include ../blocks/modules/platform/platform
-	include ../blocks/modules/tokenomics/tokenomics
-	include ../blocks/modules/achievements/achievements
-	include ../blocks/modules/roadmap/roadmap
-	include ../blocks/modules/partners/partners
+	main 
+		include ../blocks/modules/main/main
+		include ../blocks/modules/platform/platform
+		include ../blocks/modules/tokenomics/tokenomics
+		include ../blocks/modules/achievements/achievements
+		include ../blocks/modules/roadmap/roadmap
+		include ../blocks/modules/partners/partners
 	include ../blocks/modules/footer/footer
 
 block scripts
-	script(src="js/vendor.js")
+	script(src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js")
+	//- script(src="js/vendor.js")
 	script(src="js/main.js")
+
