@@ -286,10 +286,7 @@ animation: crystal-3d 40s infinite linear;
 }
 
 @media (max-width: $smTableWidth) {
-    .main {
-        background: url(./../img/main/bg-mob.png) bottom center no-repeat;
-        background-size: cover;
-        
+    .main {        
         .container {
             height: fit-content;
         min-height: fit-content;

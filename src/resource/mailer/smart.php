@@ -1,21 +1,17 @@
 <?php 
 $secret = $_POST['secret'];
 $token = "5192054740:AAE9MDc7Qo5271ei0E1_bdbM4tDKV1WcqjU";
-$chat_id = "-1001600678532";
+$chat_id = "-1001581767730";
 
 $name = $_POST['name'];
-$project = $_POST['project'];
 $telegram = $_POST['telegram'];
 $phone = $_POST['phone'];
-$message = $_POST['message'];
 
 $arr = array(
 	'Вид: ' => 'Заявка',
 	'Имя: ' => $name,
-	'Название проекта: ' => $project,
 	'Telegram: ' => $telegram,
 	'Телефон: ' => $phone,
-	'Комментарий: ' => $message,
   );
 
   foreach($arr as $key => $value) {
