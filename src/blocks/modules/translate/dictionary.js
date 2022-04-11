@@ -1,29 +1,51 @@
 const langArr = {
     // header
-    "menu-metaCraft":{
+    "menu-metacraft":{
         "en": "MetaCraft",
         "ru": "MetaCraft"
     },
-    "menu-buy-nct": {
-        "en": "Buy NCT",
-        "ru": "Купить NCT"
+    "menu-metacraft":{
+        "en": "menu-nftcraft",
+        "ru": "MetaCraft"
     },
-    "menu-economics": {
-        "en": "Economics",
-        "ru": "Экономика"
+    "menu-metacraft":{
+        "en": "MetaCraft",
+        "ru": "MetaCraft"
     },
-    "menu-achievements": {
-        "en": "Achievements",
-        "ru": "Результаты"
+    "menu-metacraft":{
+        "en": "MetaCraft",
+        "ru": "MetaCraft"
     },
-    "menu-nct": {
-        "en": "Invest",
+    "menu-metacraft":{
+        "en": "MetaCraft",
+        "ru": "MetaCraft"
+    },
+    "menu-partners":{
+        "en": "For partners",
+        "ru": "Партнерам"
+    },
+    "menu-invest":{
+        "en": "For investors",
         "ru": "Инвесторам"
     },
-    "menu-roadmap": {
-        "en": "Roadmap",
-        "ru": "Roadmap"
-    }, 
+
+    "menu-world":{
+        "en": "Worlds",
+        "ru": "Миры"
+    },
+    "menu-tokens":{
+        "en": "TOKENOMICA",
+        "ru": "ТОКЕНОМИКА"
+    },
+    "menu-achievements":{
+        "en": "achievements",
+        "ru": "Результаты"
+    },
+    "menu-roadmap":{
+        "en": "roadmap",
+        "ru": "roadmap"
+    },
+
     //platform
     "platform-label-1": {
         "en": "DWARFS IN MINECRAFT!",

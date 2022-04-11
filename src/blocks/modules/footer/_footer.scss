@@ -4,6 +4,15 @@ footer {
     align-items: center;
     background: rgba(0, 0, 0, 0.4);
     padding: rem(48) rem(10);
+
+    .links {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: rem(12);
+        margin-top: rem(36);
+        margin-bottom: rem(40);
+    }
 }
 .text {
     p {
@@ -24,14 +33,7 @@ footer {
         opacity: 0.5;
     }
 }
-.links {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    gap: rem(12);
-    margin-top: rem(36);
-    margin-bottom: rem(40);
-}
+
 .rights {
     font-size: rem(16);
     line-height: rem(19);
