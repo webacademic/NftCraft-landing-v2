@@ -25,8 +25,7 @@
         left: 50%;
         transform: translate(-50%, -100%);
         width: rem(752);
-        height: rem(407);
-        background: url(../../../img/popups/server/bg.png) center center no-repeat;
+        background: url(./../img/popups/server/bg.png) center center no-repeat;
         background-size: 100% 100%;
         padding: rem(47) rem(64) rem(56);
         transition: top .5s, transform .5s;
@@ -39,7 +38,7 @@
         right: rem(24);
         width: rem(32);
         height: rem(32);
-        background: url(../../../img/popups/close.png) center center no-repeat;
+        background: url(./../img/popups/close.png) center center no-repeat;
         background-size: 100% 100%;
     }
 
@@ -56,7 +55,7 @@
         text-transform: uppercase;
         color: #FFFFFF;
         text-shadow: 0px 0px 64px #FFC700, 0px 0px 24px #FFC700, 0px 0px 6px #FFC700;
-        background: url(../../../img/popups/server/title.png) center center no-repeat;
+        background: url(./../img/popups/server/title.png) center center no-repeat;
         background-size: 100% 100%;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5), 0px 4px 24px rgba(0, 0, 0, 0.5), inset -1px 1px 1px rgba(255, 255, 255, 0.16), inset 1px 1px 1px rgba(255, 255, 255, 0.16);
         border-radius: 2px;
@@ -96,15 +95,6 @@
             }
         }
 
-        .message {
-            height: rem(19);
-            font-weight: 400;
-            font-size: rem(16);
-            line-height: 120%;
-            color: #FF5252;
-            margin-bottom: rem(12);
-        }
-
         .btn {
             cursor: pointer;
             background: #EA6013;
@@ -130,7 +120,6 @@
         position: absolute;
         top: rem(16);
         right: rem(16);
-        height: calc(100% - 2rem);
         z-index: -1;
 
         img {
@@ -145,6 +134,10 @@
     .popup {
         .img {
             display: none;
+        }
+        &-title{
+            left: 50%;
+            transform: translate(-50%, -35%);
         }
         &-content {
             width: fit-content;

@@ -20,7 +20,7 @@ const inputs = form.querySelectorAll('input')
 inputs.forEach(item => {
     item.addEventListener('input', () => {
 
-        if (inputs[0].value !== '' && inputs[1].value !== '') {
+        if (inputs[0].value !== '' && inputs[1].value !== ''  && inputs[2].value !== '') {
             form.querySelector('button').classList.remove('inactive')
         } else {
             form.querySelector('button').classList.add('inactive')
