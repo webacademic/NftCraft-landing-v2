@@ -20,6 +20,14 @@ const langArr = {
         "en": "For investors",
         "ru": "Инвесторам"
     },
+    "menu-partners-2":{
+        "en": "Partners",
+        "ru": "Партнеры"
+    },
+    "menu-invest-2":{
+        "en": "For investors",
+        "ru": "Инвесторам"
+    },
     // menu anchor
     "menu-world":{
         "en": "Worlds",
