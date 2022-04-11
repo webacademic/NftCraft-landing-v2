@@ -32,6 +32,23 @@ const langArr = {
         "en": "Roadmap",
         "ru": "Roadmap"
     }, 
+    "menu-world":{
+        "en": "Worlds",
+        "ru": "Миры"
+    },
+    "menu-tokens":{
+        "en": "TOKENOMICA",
+        "ru": "ТОКЕНОМИКА"
+    },
+    "menu-achievements":{
+        "en": "achievements",
+        "ru": "Результаты"
+    },
+    "menu-roadmap":{
+        "en": "roadmap",
+        "ru": "roadmap"
+    },
+
     //main
     "main-label": {
         "en": "Play and earn",
@@ -48,23 +65,6 @@ const langArr = {
     "main-btn-2": {
         "en": "<a href='https://t.me/nftcrafthi_enbot'>Subscribe <img src='./img/main/tg.svg'/></a>",
         "ru": "<a href='https://t.me/nftcrafthi_bot'>Подписаться <img src='./img/main/tg.svg'/></a>"
-    },
-
-    "menu-world":{
-        "en": "Worlds",
-        "ru": "Миры"
-    },
-    "menu-tokens":{
-        "en": "TOKENOMICA",
-        "ru": "ТОКЕНОМИКА"
-    },
-    "menu-achievements":{
-        "en": "achievements",
-        "ru": "Результаты"
-    },
-    "menu-roadmap":{
-        "en": "roadmap",
-        "ru": "roadmap"
     },
 
     //platform
