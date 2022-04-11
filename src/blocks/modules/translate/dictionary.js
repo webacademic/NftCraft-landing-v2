@@ -4,52 +4,23 @@ const langArr = {
         "en": "MetaCraft",
         "ru": "MetaCraft"
     },
-    "menu-metacraft":{
-        "en": "menu-nftcraft",
-        "ru": "MetaCraft"
+    "menu-nftcraft":{
+        "en": "Web",
+        "ru": "Веб"
     },
-    "menu-metacraft":{
-        "en": "MetaCraft",
-        "ru": "MetaCraft"
-    },
-    "menu-metacraft":{
-        "en": "MetaCraft",
-        "ru": "MetaCraft"
-    },
-    "menu-metacraft":{
-        "en": "MetaCraft",
-        "ru": "MetaCraft"
+    "menu-unity":{
+        "en": "Unity (test)",
+        "ru": "Unity (test)"
     },
     "menu-partners":{
-        "en": "For partners",
-        "ru": "Партнерам"
+        "en": "Partners",
+        "ru": "Партнеры"
     },
     "menu-invest":{
         "en": "For investors",
         "ru": "Инвесторам"
     },
-    "menu-roadmap": {
-        "en": "Roadmap",
-        "ru": "Roadmap"
-    }, 
-    //main
-    "main-label": {
-        "en": "Play and earn",
-        "ru": "ИГРАЙ И ЗАРАБАТЫВАЙ"
-    },
-    "main-title": {
-        "en": "Welcome to <br> the Universe METACRAFT.EARTH",
-        "ru": "ДОБРО ПОЖАЛОВАТЬ <br> ВО ВСЕЛЕННУЮ METACRAFT.EARTH"
-    },
-    "main-btn-1": {
-        "en": "Projects",
-        "ru": "Проекты"
-    },
-    "main-btn-2": {
-        "en": "<a href='https://t.me/nftcrafthi_enbot'>Subscribe <img src='./img/main/tg.svg'/></a>",
-        "ru": "<a href='https://t.me/nftcrafthi_bot'>Подписаться <img src='./img/main/tg.svg'/></a>"
-    },
-
+    // menu anchor
     "menu-world":{
         "en": "Worlds",
         "ru": "Миры"
@@ -66,6 +37,24 @@ const langArr = {
         "en": "roadmap",
         "ru": "roadmap"
     },
+
+    //main
+    "main-label": {
+        "en": "Play and earn",
+        "ru": "ИГРАЙ И ЗАРАБАТЫВАЙ"
+    },
+    "main-title": {
+        "en": "Welcome to <br> the Universe METACRAFT.EARTH",
+        "ru": "ДОБРО ПОЖАЛОВАТЬ <br> ВО ВСЕЛЕННУЮ METACRAFT.EARTH"
+    },
+    "main-btn-1": {
+        "en": "Projects",
+        "ru": "Проекты"
+    },
+    "main-btn-2": {
+        "en": "<a href='https://t.me/nftcrafthi_enbot'>Subscribe <img src='./img/main/tg.svg'/></a>",
+        "ru": "<a href='https://t.me/nftcrafthi_bot'>Подписаться <img src='./img/main/tg.svg'/></a>"
+    },    
 
     //platform
     "platform-label-1": {
