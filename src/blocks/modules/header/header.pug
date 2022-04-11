@@ -1,34 +1,67 @@
-header.header
-  .container
-    a.header__logo(href='/')
-      +picture('./img/header/logo', ['png', 'webp'], 'Logo NFT Craft')
+header.header   
+  .top     
+    //- lang,name,link, iamge OPT, active OPT 
+    -let linksArr = [{lang: 'menu-metacraft', name: 'Metacraft', link: 'http://dev.dwarfworld.ru/ru', image: true, active: true},{lang: 'menu-nftcraft', name: 'NFTCraft', link: 'http://tweb.nftcraft.game', image: true},{lang: 'menu-unity', name: 'Unity (test)', link: 'http://unity.nftcraft.game/', image: true}]
+    .menu.links
+      .logo
+        +picture('./img/header/logo-big', ['png', 'webp'], 'logo') 
+      each item in linksArr 
+        .item(class= item.active ? "active" : "")
+          if item.image
+            .icon-game            
+          a(href=item.link, rel="noopener noreferrer" data-lang=item.lang) #{item.name}
+      -let extraLinkArr = [{lang: 'menu-partners', name: 'Партнерам', link: '#partners'},{lang: 'menu-invest', name: 'Инвесторам', link: 'https://invest.nftcraft.game'}]
+      .menu__extra 
+        each item in extraLinkArr
+          .item(class= item.active ? "active" : "")          
+            a(href=item.link, data-lang=item.lang) #{item.name}
+      .lang(data-lang-selector lang-value="en")
+        span.lang-selected
+        +picture('./img/header/arrow', ['png', 'webp'], 'arrow')
+        ul.lang-list
+          li.lang-list__item
+            a.ru(data-lang-pick="ru") Russian
+          li.lang-list__item
+            a.en(data-lang-pick="en") English
+    
+  .bottom
+    -let anchorArr = [{lang: 'menu-world', name: 'Миры', link: '#platform'},{lang: 'menu-tokens', name: 'ТОКЕНОМИКА', link: '#tokenomics'},{lang: 'menu-achievements', name: 'Результаты', link: '#achievements'},{lang: 'menu-roadmap', name: 'roadmap', link: '#roadmap'}]
+    .menu.menu__anchor 
+      each item in anchorArr 
+         a(href=item.link, data-lang=item.lang) #{item.name}
+      .button_play
+        button(data-lang="button-play") Play
 
-    .lang(data-lang-selector lang-value="en")
-      span.lang-selected
-      +picture('./img/header/lang_arrow', ['png', 'webp'], 'Logo NFT Craft')
-      ul.lang-list
-        li.lang-list__item
-          a.ru(data-lang-pick="ru") RUS
-        li.lang-list__item
-          a.en(data-lang-pick="en") ENG
-    nav.header__nav
-      ul
-        li
-          a(href='https://mine.nftcraft.game' data-lang="menu-metaCraft") MetaCraft
-        li
-          a(href='#tokenomics' data-lang="menu-economics") Economics
-        li
-          a(href='#achievements' data-lang="menu-achievements") Achievements
-        li 
-          a(href="#roadmap" data-lang="menu-roadmap") Roadmap 
-        li.beta
-          a(href='https://invest.nftcraft.game/ ')             
-            i
-            i
-            i
-            i
-            p(data-lang="menu-nct")        
-    input#checkbox.mobile-menu__checkbox(type='checkbox')
-    label.mobile-menu__btn(for='checkbox')
-      span.mobile-menu__icon
-    //- a.beta__mobile(href='https://app.nftcraft.game' onclick="ym(86035474,'reachGoal','RUN_DEMO_EN')") Demo
+//- header.header
+//-   .container
+//-     a.header__logo(href='/')
+//-       img(src='./img/header/logo.png' alt='Logo NFT Craft')
+
+//-     .lang(data-lang-selector lang-value="en")
+//-       span.lang-selected
+//-       ul.lang-list
+//-         li.lang-list__item
+//-           a.ru(data-lang-pick="ru") Russian
+//-         li.lang-list__item
+//-           a.en(data-lang-pick="en") English
+//-     nav.header__nav
+//-       ul
+//-         //- li
+//-         //-   a(href='https://mine.nftcraft.game' data-lang="menu-metaCraft") MetaCraft
+//-         li
+//-           a(href='https://tweb.nftcraft.game/') NFTcraft
+//-         li
+//-           a(href='https://unity.nftcraft.game/') Unity
+//-         li 
+//-           a(href="https://mine.nftcraft.game/") MetaCraft 
+//-         li.beta
+//-           a(href='https://invest.nftcraft.game/')             
+//-             i
+//-             i
+//-             i
+//-             i
+//-             p(data-lang="menu-nct")
+//-     input#checkbox.mobile-menu__checkbox(type='checkbox')
+//-     label.mobile-menu__btn(for='checkbox')
+//-       span.mobile-menu__icon
+//-     //- a.beta__mobile(href='https://app.nftcraft.game' onclick="ym(86035474,'reachGoal','RUN_DEMO_EN')") Demo
