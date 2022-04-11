@@ -20,7 +20,7 @@ header.header
         button(data-lang="button-play") Play
       .menu.menu__anchor 
         each item in anchorArr 
-          a(href=item.link, data-lang=item.lang) #{item.name}
+          a(href=item.link) #{item.name}
       .lang(data-lang-selector lang-value="en")
         span.lang-selected
         +picture('./img/header/arrow', ['png', 'webp'], 'arrow')

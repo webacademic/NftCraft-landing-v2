@@ -54,7 +54,7 @@ const langArr = {
     "main-btn-2": {
         "en": "<a href='https://t.me/nftcrafthi_enbot'>Subscribe <img src='./img/main/tg.svg'/></a>",
         "ru": "<a href='https://t.me/nftcrafthi_bot'>Подписаться <img src='./img/main/tg.svg'/></a>"
-    },    
+    },
 
     //platform
     "platform-label-1": {
