@@ -125,23 +125,22 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 1.5rem;
+            height: fit-content;
+            padding: 0 0 16px 0;
             img {
-                top: 50%;
+                position: relative;
+                width: 100%;
+                height: auto;
+                top: 0;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateX(-50%) ;
                 object-fit: cover;
-                opacity: .4;
+                order: 1;
+                margin-bottom: 36px;
             }
-            &:nth-child(even) { 
+            &:nth-child(even) {
+                text-align: center;
                 align-items: center;
-            justify-content: center;
-            text-align: center;
-                img {
-                    right: auto;
-                    left: 50%;
-                    transform: translate(-50%, -50%) scale(-1, 1);
-                }
             }
         }
         .slider {
@@ -150,9 +149,22 @@
                 left: 1.5rem;
             }
         }
+        .name {
+            padding: 0 16px;
+            order: 2;
+        }
         .title {
+            padding: 0 16px;
             font-size: 24px;
             line-height: 120%;
+            order: 3;
+        }
+        .descr {
+            padding: 0 16px;
+            order: 4;
+        }
+        .btn {
+            order: 5;
         }
     }
 }

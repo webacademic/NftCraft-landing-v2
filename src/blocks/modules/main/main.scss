@@ -1,34 +1,347 @@
 .main {
-    background: url(./../img/main/bg.png) center center no-repeat;
+    background: url(./../img/main/bg-main.png) center bottom no-repeat;
     background-size: cover;
     margin-bottom: 73px;
+    position: relative;
+    overflow: hidden;
     .container {
+        padding-top: 6.15rem;
+        padding-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
         height: 100%;
-        min-height: 100vh;
+        max-height: 1280px;
+        min-height: 56vw;
+        height: 100vh;
+        
     }
-    .logo {
+    .dwarf-2d {
         position: absolute;
+        bottom: -30.2%;
+        left: -49.4%;
+        width: 93.25%;
+        animation: dwarf-2d 50s infinite linear;
+    }
+
+    .crystal-3d {
+        position: absolute;
+        right: -19.7%;
+        top: 8.1%;
+        width: 44%;
+animation: crystal-3d 40s infinite linear;
+    }
+
+    .dwarf-3d {
+        position: absolute;
+        bottom: -37.6%;
+        right: -29.2%;
+        width: 81.95%;
+        animation: dwarf-3d 40s infinite linear;
+    }
+
+
+
+    .crystal-2d {
+        position: absolute;
+        width: 85.4%;
+        top: -15.4%;
+        left: -25.5%;
+        animation: crystal-2d 35s infinite linear;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-main {
+        position: absolute;
+        width: 100%;
+        height: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: rem(689);
-        height: rem(394);
+        animation: bg-main 30s linear infinite;
+        img {
+            object-fit: cover;
+        }
+    }
+    .bg-3d {
+        position: absolute;
+        width: 60%;
+        top: 0;
+        height: 100%;
+        right: 0;
+        animation: bg-3d 25s linear infinite;
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .logo {
+        width: 31.25rem;
+        position: relative;
+        z-index: 5;
+        animation: logo-main 20s infinite linear;
+
         img {
             width: 100%;
             height: 100%;
         }
     }
-}
 
-@media (max-width: 570px) {
-    .main {
-        background: url(./../img/main/bg.png) top right no-repeat;
-        background-size: cover;
-        .logo {
-            width: 134%;
-            height: auto;
-            top: 38%;
+    .label {
+        margin-top: -9px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: rem(12);
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 1px #000000;
+        position: relative;
+        z-index: 5;
+    }
+
+    .title {
+        position: relative;
+        z-index: 5;
+        text-align: center;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 110%;
+        margin-bottom: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 1px #000000, 0px 0px 64px rgba(255, 255, 255, 0.5), 0px 0px 24px rgba(255, 255, 255, 0.4), 0px 0px 4px rgba(255, 255, 255, 0.6);
+
+    }
+
+    .btn {
+        position: relative;
+        z-index: 5;
+        font-size: 22px;
+        width: 100%;
+        max-width: 280px;
+        min-height: 64px;
+        &.blue {
+            margin-bottom: 24px;
+            background: #0053CF;
+            box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6), inset -1px 1px 2px rgba(255, 255, 255, 0.4), inset 1px 1px 2px rgba(255, 255, 255, 0.4);
+        }
+
+        &.tg {
+            background: linear-gradient(0deg, #00BAFF, #00BAFF), #0073CE;
+            box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6), inset -1px 1px 2px rgba(255, 255, 255, 0.4), inset 1px 1px 2px rgba(255, 255, 255, 0.4);
+
+            img {
+                width: 22px;
+                height: 18px;
+                margin-left: 12px;
+            }
         }
     }
 }
+
+@keyframes dwarf-2d {
+    0% {
+        transform: translate(-10%, 10%) scale(.9);
+    }
+    50% {
+        transform: translate(0%, 0%) scale(1);
+    }
+    100% {
+        transform: translate(-10%, 10%) scale(.9);
+    }
+}
+
+@keyframes dwarf-3d {
+    0% {
+        transform: translate(10%, 10%) scale(.9);
+    }
+    50% {
+        transform: translate(0%, 0%) scale(1);
+    }
+    100% {
+        transform: translate(10%, 10%) scale(.9);
+    }
+}
+
+@keyframes crystal-2d { 
+    0% {
+        transform: translate(-20%, -30%) scale(.5);
+        opacity: .2;
+    }
+    50% {
+        transform: translate(10%, 5%) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-20%, -30%) scale(.5);
+        opacity: .2;
+    }
+}
+
+@keyframes crystal-3d { 
+    0% {
+        transform: translate(40%, -20%) scale(.7);
+        opacity: .9;
+    }
+    50% {
+        transform: translate(10%, 5%) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(40%, -20%) scale(.7);
+        opacity: .9;
+    }
+}
+
+@keyframes bg-main {
+    0% {
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+    }
+    50% {
+        opacity: 1;
+        width: 120%;
+        height: 120%;
+    }
+    100% {
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes logo-main { 
+    0% {
+        opacity: .7;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: .7;
+        transform: scale(1);
+    }
+}
+
+@keyframes bg-3d {
+    0% {
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+    }
+    50% {
+        opacity: 1;
+        width: 120%;
+        height: 120%;
+    }
+    100% {
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1921px) { 
+    .main {
+        .container {
+            max-height: 1080px;
+            min-height: auto;
+        }
+    }
+}
+
+@media (max-width: $desktopWidth) {
+    .main  {
+        .dwarf-3d {
+            bottom: -28%;
+        }
+    }
+}
+
+@media (max-width: $lgTableWidth) {
+    .main  {
+        .container {
+            height: auto;
+        }
+        .dwarf-2d {
+            bottom: -16%;
+        }
+        .dwarf-3d {
+            bottom: -18%;
+        }
+        .crystal-2d {
+            top: -8%;
+        }
+    }
+}
+
+@media (max-width: $smTableWidth) {
+    .main {
+        background: url(./../img/main/bg-mob.png) bottom center no-repeat;
+        background-size: cover;
+        
+        .container {
+            height: fit-content;
+        min-height: fit-content;
+        padding-bottom: 231px;
+        }
+        .bg-3d {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .dwarf-3d {
+            bottom: -18%;
+            width: 110%;
+            right: -22%;
+        }
+        .dwarf-2d {
+            bottom: 8%;
+            width: 100%;
+            left: -32%;
+        }
+        .crystal-3d {
+            top: 28.1%;
+            right: -8%;
+        }
+        .crystal-2d {
+            top: 4%;
+            left: -21%;
+            width: 100%;
+        }
+        .logo {
+            margin-top: 30px;
+            width: 100%;
+            height: auto;
+            max-width: 340px;
+        }
+        .title {
+            font-size: 22px;
+            line-height: 120%;
+            max-width: 288px;
+            margin-bottom: 24px;
+        }
+        .label {
+            font-size: 12px;
+        }
+        .btn {
+            min-height: 48px;
+            width: 214px;
+            font-size: 18px;
+line-height: 21px;
+            &.blue {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+

@@ -24,6 +24,23 @@ const langArr = {
         "en": "Roadmap",
         "ru": "Roadmap"
     }, 
+    //main
+    "main-label": {
+        "en": "Play and earn",
+        "ru": "ИГРАЙ И ЗАРАБАТЫВАЙ"
+    },
+    "main-title": {
+        "en": "Welcome to <br> the Universe METACRAFT.EARTH",
+        "ru": "ДОБРО ПОЖАЛОВАТЬ <br> ВО ВСЕЛЕННУЮ METACRAFT.EARTH"
+    },
+    "main-btn-1": {
+        "en": "Projects",
+        "ru": "Проекты"
+    },
+    "main-btn-2": {
+        "en": "<a href='https://t.me/nftcrafthi_enbot'>Subscribe <img src='./img/main/tg.svg'/></a>",
+        "ru": "<a href='https://t.me/nftcrafthi_bot'>Подписаться <img src='./img/main/tg.svg'/></a>"
+    },
     //platform
     "platform-label-1": {
         "en": "DWARFS IN MINECRAFT!",
@@ -31,7 +48,7 @@ const langArr = {
     },
     "platform-title-1": {
         "en": "PLAY AND EARN IN MINECRAFT",
-        "ru": "ИГРАЙ И ЗАРАБАТЫВАЙ <br> В MINECRAFTР"
+        "ru": "ИГРАЙ И ЗАРАБАТЫВАЙ <br> В MINECRAFT"
     },
     "platform-descr-1": {
         "en": "<b>Win</b> сUSD tokens or a percent of the total prize pool <br> <br> <b>Take part</b> in the construction of famous architectural structures, get rewards and become their co-owner <br> <br> Participate and win in regular tournaments with a prize pool <b>of 100 to 300 USDT</b>",
@@ -91,11 +108,11 @@ const langArr = {
     },
     // tokenomics
     "tokenomics-title": {
-        "en": "Tockenomic project",
+        "en": "Tokenomic project",
         "ru": "ТОКЕНОМИКА ПРОЕКТА"
     },
     "tokenomics-label": {
-        "en": "Basic concepts of Tockenomics of the Universe Metacraft",
+        "en": "Basic concepts of Tokenomics of the Universe Metacraft",
         "ru": "Основные понятия токеномики вселенной METACRAFT"
     },
     "tokenomics-name-1": {
@@ -459,6 +476,11 @@ const langArr = {
     "road-block-4-2": {
         "en": "Connecting the most popular AAA games to the METACRAFT.EARTH economy",
         "ru": "Подключение наиболее популярных AAA-игр к экономике METACRAFT.EARTH"
+    },
+    //partners
+    "partners-title": {
+        "en": "Partners",
+        "ru": "Партнеры"
     },
     // Footer
     "footer-about": {
