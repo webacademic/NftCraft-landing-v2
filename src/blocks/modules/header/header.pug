@@ -16,8 +16,8 @@ header.header
             .icon-game            
           a(href=item.link, rel="noopener noreferrer" data-lang=item.lang) #{item.name} 
     .menu__main 
-      .button_play
-        button(data-lang="button-play") Play
+      //- .button_play
+      //-   button(data-lang="button-play") Play
       .menu.menu__anchor 
         each item in anchorArr 
           a(href=item.link) #{item.name}
@@ -60,5 +60,5 @@ header.header
     .menu.menu__anchor 
       each item in anchorArr 
          a(href=item.link, data-lang=item.lang) #{item.name}
-      .button_play
-        button(data-lang="button-play") Play
+      //- .button_play
+      //-   button(data-lang="button-play") Play
