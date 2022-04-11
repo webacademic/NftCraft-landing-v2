@@ -187,6 +187,16 @@ line-height: 150%;
 
 @media (max-width: $phoneWidth) {
     .tokenomics {
+        .title {
+            font-size: 20px;
+        }
+        .wrapper {
+            text-align: left;
+        }
+        .content {
+            font-size: 14px;
+line-height: 140%;
+        }
         .tabs {
             .item {
                 width: 100%;

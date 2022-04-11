@@ -72,5 +72,3 @@ const selectLang = () => {
 
 changeLang();
 selectLang();
-
-console.log(document.head.innerHTML);
