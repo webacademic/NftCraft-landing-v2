@@ -3,10 +3,11 @@
         .popup-close(data-close)
         .popup-title(data-lang="popup-title") Подключение серверов
         .popup-descr(data-lang="popup-descr") Оставьте имя и телефон для получения предложения по повышению доходности вашей игры
-        form(action="")
+        form.application__form(method="POST")
             input(type="text" autocomplete="off" required name="name" placeholder="Name*")
             input(type="text" autocomplete="off" required name="telegram" placeholder="Telegram*") 
-            input(type="text" autocomplete="off" required name="tel" placeholder="Phone*") 
-            button(type="submit" data-lang="popup-btn").btn.inactive получить
+            input(type="text" autocomplete="off" required name="phone" placeholder="Phone*") 
+            input.secret(type="hidden" autocomplete="off" value="") 
+            button(type="submit" data-lang="popup-btn").btn.inactive.application__button получить
         .img 
             img(src="./img/popups/server/img.png", alt="")
