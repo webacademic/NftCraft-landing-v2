@@ -1,12 +1,12 @@
 .popup.serv
     .popup-content 
         .popup-close(data-close)
-        .popup-title Подключение серверов
-        .popup-descr Оставьте имя и телефон для получения предложения по повышению доходности вашей игры
+        .popup-title(data-lang="popup-title") Подключение серверов
+        .popup-descr(data-lang="popup-descr") Оставьте имя и телефон для получения предложения по повышению доходности вашей игры
         form(action="")
-            input(type="text" autocomplete="off" name="name" placeholder="Name")
-            input(type="text" autocomplete="off" name="tel" placeholder="Phone") 
-            .message 
-            button(type="submit").btn.inactive получить
+            input(type="text" autocomplete="off" required name="name" placeholder="Name*")
+            input(type="text" autocomplete="off" required name="telegram" placeholder="Telegram*") 
+            input(type="text" autocomplete="off" required name="tel" placeholder="Phone*") 
+            button(type="submit" data-lang="popup-btn").btn.inactive получить
         .img 
             img(src="./img/popups/server/img.png", alt="")

@@ -524,7 +524,20 @@ const langArr = {
     "footer-rights": {
         "en": "All Rights Reserved",
         "ru": "Все права защищены"
-    }   
+    },
+    //Popup
+    "popup-title": {
+        "en": "Connecting servers",
+        "ru": "ПОДКЛЮЧЕНИЕ СЕРВЕРОВ"
+    },
+    "popup-descr": {
+        "en": "Leave the name and phone to get a proposal to increase your game profitability.",
+        "ru": "Оставьте имя и телефон для получения предложения по повышению доходности вашей игры"
+    },
+    "popup-btn": {
+        "en": "Get",
+        "ru": "Получить"
+    },
 }
 
 export { langArr };
