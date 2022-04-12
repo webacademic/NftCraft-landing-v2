@@ -70,8 +70,8 @@ const langArr = {
         "ru": "ДВАРФЫ В MINECRAFT!"
     },
     "platform-title-1": {
-        "en": "PLAY AND EARN IN MINECRAFT",
-        "ru": "ИГРАЙ И ЗАРАБАТЫВАЙ <br> В MINECRAFT"
+        "en": "PLAY AND EARN IN MINECRAFT-like world",
+        "ru": "ИГРАЙ И ЗАРАБАТЫВАЙ <br> В MINECRAFT-подобном мире"
     },
     "platform-descr-1": {
         "en": "<b>Win</b> сUSD tokens or a percent of the total prize pool <br> <br> <b>Take part</b> in the construction of famous architectural structures, get rewards and become their co-owner <br> <br> Participate and win in regular tournaments with a prize pool <b>of 100 to 300 USDT</b>",
@@ -517,6 +517,11 @@ const langArr = {
     "footer-invest": {
         "en": "For investors ",
         "ru": "Для инвесторов "
+    },
+    
+    "footer-note": {
+        "en": "We are not Minecraft official*",
+        "ru": "Мы не являемся офф представителями Minecraft*"
     },
     "footer-rights": {
         "en": "All Rights Reserved",

@@ -13,6 +13,13 @@ footer {
         margin-top: rem(36);
         margin-bottom: rem(40);
     }
+    a.footer__policy {
+        font-size: rem(16);
+        line-height: rem(19);
+        color: #ffffff;
+        opacity: 0.3;
+        text-decoration: underline;
+    }
 }
 .text {
     p {
