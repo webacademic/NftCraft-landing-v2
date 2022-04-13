@@ -295,10 +295,10 @@ const langArr = {
         "en": "Video 01.10.21",
         "ru": "Видео 01.10.21"
     },
-    "achievements-link-8-2": {
-        "en": "Video 22.02.22",
-        "ru": "Видео 22.02.22"
-    },
+    // "achievements-link-8-2": {
+    //     "en": "Video 22.02.22",
+    //     "ru": "Видео 22.02.22"
+    // },
     "achievements-name-9": {
         "en": "Released of Governance-token NCT",
         "ru": "Выпуск Governance-токена NCT"
