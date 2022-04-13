@@ -20,6 +20,19 @@ footer {
         opacity: 0.3;
         text-decoration: underline;
     }
+
+    .text_grey {
+        font-size: rem(16);
+        line-height: rem(19);
+        color: #ffffff;
+        opacity: 0.3;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+    a.text_grey {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 .text {
     p {
@@ -39,11 +52,4 @@ footer {
         color: #07f0ff;
         opacity: 0.5;
     }
-}
-
-.rights {
-    font-size: rem(16);
-    line-height: rem(19);
-    color: #ffffff;
-    opacity: 0.3;
 }
