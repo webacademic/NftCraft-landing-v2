@@ -473,8 +473,8 @@ const langArr = {
         "ru": "Запуск международной рекламной кампании"
     },
     "road-block-3-6": {
-        "en": "METACRAFT universe in Minecraft world launch",
-        "ru": "Запуск метавселенной METACRAFT в мире Minecraft"
+        "en": "METACRAFT universe based on Minecraft Mechanic",
+        "ru": "Запуск метавселенной METACRAFT на базе механик Minecraft"
     },
     "road-block-3-7": {
         "en": "Major release of web-version in the Polygon blockchain",
