@@ -143,8 +143,8 @@ const langArr = {
         "ru": "Управляющий токен"
     },
     "tokenomics-descr-1-1": {
-        "en": "Governance platform token. Meant for investment and management purposes",
-        "ru": "Управляющий (governance) токен платформы, предназначенный для инвестиционных и управленческих целей."
+        "en": "Governance platform token. Meant for interaction and project management",
+        "ru": "Управляющий (governance) токен платформы, предназначенный для взаимодействия и управления проектом"
     },
     "tokenomics-name-2": {
         "en": "CraftUSD Stable Token",
@@ -195,8 +195,8 @@ const langArr = {
         "ru": "КАК ЗАРАБАТЫВАЮТ <br> ИГРОКИ"
     },
     "tokenomics-token-descr-1-1": {
-        "en": "Players, by completing tasks, participating in tournaments, building architectural structures, and mining valuable resources, receive cUSD - game stable token in the amount from 1/1000 to 1/50 of the current fund size.",
-        "ru": "Игроки, выполняя задания, участвуя в турнирах, строя архитектурные сооружения и добывая ценные ресурсы, получают cUSD - игровой стейблтокен в размере от 1/1000 до 1/50 от текущего размера фонда."
+        "en": "Players, by completing tasks, participating in tournaments, building architectural structures, and mining valuable resources, receive cUSD - game stable token dollar from 1/1000 to 1/50 per day.",
+        "ru": "Игроки, выполняя задания, участвуя в турнирах, строя архитектурные сооружения и добывая ценные ресурсы, получают cUSD - игровой стейблтокен доллара от 1/1000 до 1/50 в день."
     },
     "tokenomics-token-descr-1-2": {
         "en": "You can withdraw cUSD over time or buy with it: RAD prize pool tokens, NCT platform tokens, NFT objects, services, or other opportunities on the platform and worlds based on it.",
