@@ -5,7 +5,7 @@ header.header
   -let extraLinkArr2 = [{lang: 'menu-partners-2', name: 'Партнеры', link: '#partners'},{lang: 'menu-invest-2', name: 'Инвесторам', link: 'https://invest.nftcraft.game'}]
   -let anchorArr = [{lang: 'menu-world', name: 'Миры', link: '#platform'},{lang: 'menu-tokens', name: 'ТОКЕНОМИКА', link: '#tokenomics'},{lang: 'menu-achievements', name: 'Результаты', link: '#achievements'},{lang: 'menu-roadmap', name: 'roadmap', link: '#roadmap'}]
   .mobile__header 
-    a(href="/").logo_mobile  
+    a(href="https://nftcraft.game").logo_mobile  
       +picture('./img/header/logo-row', ['png', 'webp'], 'logo') 
     button.burger-menu
       span
@@ -37,7 +37,7 @@ header.header
             a(href=item.link, data-lang=item.lang) #{item.name}
   .top
     .menu.links
-      .logo
+      a(href="https://nftcraft.game").logo
         +picture('./img/header/logo-big', ['png', 'webp'], 'logo') 
       each item in linksArr 
         .item(class= item.active ? "active" : "")
