@@ -34,7 +34,7 @@ const langArr = {
         "ru": "Миры"
     },
     "menu-tokens":{
-        "en": "TOKENOMICA",
+        "en": "TOKENOMICS",
         "ru": "ТОКЕНОМИКА"
     },
     "menu-achievements":{
@@ -106,8 +106,8 @@ const langArr = {
         "ru": "ПРОТОТИП НА UNITY"
     },
     "platform-descr-3": {
-        "en": "Make money <b>fast and easy!</b> <br> <br> Your own MINECRAFT world on 3D Unity engine, accessible <b>directly from your browser</b>",
-        "ru": "Зарабатывай <b>быстро и просто!</b> <br> <br> Собственный мир MINECRAFT на 3D движке Unity доступный <b>прямо из браузера</b>"
+        "en": "Make money <b>fast and easy!</b> <br> <br> Your own world based on Minecraft Mechanic on 3D Unity engine, accessible <b>directly from your browser</b>",
+        "ru": "Зарабатывай <b>быстро и просто!</b> <br> <br> Собственный мир на базе механик MINECRAFT на 3D движке Unity доступный <b>прямо из браузера</b>"
     },
     "platform-button-3": {
         "en": "Play",
