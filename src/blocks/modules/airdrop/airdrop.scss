@@ -1201,6 +1201,14 @@
 
 @media (max-width: 520px) {
     .airdrop {
+        &-play {
+            &__img {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
         .faq {
             .accordion {
                 .trigger {
