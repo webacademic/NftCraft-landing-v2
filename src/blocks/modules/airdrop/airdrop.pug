@@ -1,0 +1,294 @@
+main.airdrop
+  .airdrop-offer
+    .container
+      h1.airdrop-offer__head
+        span $ 300 000
+        |  Airdrop
+      .airdrop-offer__subtitle NFT lootboxes
+      .airdrop-offer__descr
+        p
+          | Anyone who has staked at least 10 XVS in the NEW Staking Vault on Venus.io can take part in the LootBoxes distribution.
+          | All NFTs have wide usage within the nftcraft.game
+      a.airdrop-offer__btn.scroll__link(href='#box') Claim nft
+      .airdrop-offer__box
+        img(src='../../img/airdrop/lutbox_idle.gif' alt='')
+      .airdrop-offer__partners
+        img.one(src='../../img/airdrop/polygon-logo.svg' alt='')
+        img.two(src='../../img/airdrop/logo_craft.svg' alt='')
+        img.three(src='../../img/airdrop/logo_venus_top.svg' alt='')
+        img.four(src='../../img/airdrop/logo_defirex.svg' alt='')
+  .airdrop-benefits
+    .container
+      a.airdrop-benefits__item.scroll__link(href='#box')
+        .img
+          img(src='../../img/airdrop/benefit_1.png' alt='')
+        .head
+          | NFTCRAFT CONDUCTS 
+          br
+          |  $300,000 AIRDROP
+        .descr For Venus users
+        span.link
+          | Claim Airdrop 
+          img(src='../../img/airdrop/arrow_right_emerald.svg' alt='')
+      a.airdrop-benefits__item.scroll__link(href='#work')
+        .img
+          img(src='../../img/airdrop/benefit_2.png' alt='')
+        .head
+          | GET 1 OF 2.000 
+          br
+          |  UNIQUE LOOTBOXES
+        .descr Each worth up to $150 
+        span.link
+          | How it works 
+          img(style='width: 9px;' src='../../img/airdrop/question.svg' alt='')
+      a.airdrop-benefits__item.scroll__link(href='#faq')
+        .img
+          img(src='../../img/airdrop/benefit_3.png' alt='')
+        .head
+          | ALL NFT OBJECTS ARE 100% 
+          br
+          |  BACKED BY ETHEREUM FUND
+        .descr Secured by CertiK audit
+        span.link
+          | LEARN MORE 
+          img(src='../../img/airdrop/arrow_right_emerald.svg' alt='')
+  #box.airdrop-box
+    .container
+      h2.airdrop-box__head HURRY UP TO GET YOUR MAGIC CHEST RIGHT NOW!
+      p.airdrop-box__descr
+        | Each LootBox contains a collection of valuable NFTs, where each NFT is backed by real ETH - so it&apos;s easy to determine the real value!
+      .airdrop-box__progress
+        .label
+          span.label__count 0
+          |                         / 
+          span.label__max__count 2000
+          |  LOOTBOXES were CLAIMED
+        .progressbar
+          .progressbar__active(style='width: 0%;')
+      .airdrop-box__wrapper
+        .airdrop-box__item
+          h3.head.green GET YOUR LOOTBOX
+          p.descr
+            | Check your wallet address that was previously staking XVS in DeFireX Vault on Venus
+          button#claimButton.btn.green
+            span Claim
+            img(src='../../img/airdrop/icons_btn_gold.svg' alt='')
+          .question.one
+            .question__item
+              | How can I check that NFT LootBox has been added to my wallet?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | You can check your wallet address from which you participated in the Airdrop on 
+                  a(href='https://bscscan.com/') https://bscscan.com/
+                  | .
+                  br
+                  |  You should see your NFT object &quot;NFTCRAFT LOOTBOX&quot; in the ERC-721 section of tokens 
+                  br
+                  |                                         You may add a token address 
+                  span#tokenAddress(style='font-weight:bold')
+                  |  to your wallet.
+            .question__item
+              | Why does my wallet address not participate in the AirDrop?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | If your wallet is not included in the AirDrop list, then you have not met the required conditions for registering in the AirDrop distribution on 
+                  a(href='https://venus.io/') https://venus.io/
+                  | , or you are just out of luck, because only 2.000 wallets win! All winning addresses are randomly selected by Venus!
+            .question__item
+              | Why didn&apos;t I receive the AirDrop on my wallet address?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | If your wallet is in the list of winners of the Venus AirDrop program, then LootBox in the form of an NFT ERC-721 token has been credited to your wallet, you can check it here 
+                  a(href='https://bscscan.com/')
+                  | , by the wallet address!
+            .question__item
+              | How to participate in LootBoxes AirDrop?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | You can not participate in the ongoing AirDrop from Venus Protocol, if you have not registered in it before. But you can take part in the new AirDrops! Check the list of upcoming AirDrops here: 
+                  a(href='https://nftcraft.game/') https://nftcraft.game/
+        .airdrop-box__item
+          h3.head.blue TRANSFER &amp; OPEN LOOTBOX
+          p.descr
+            | You can open your LootBox in the main release of NFTCRAFT.GAME - The release will launch on the Polygon Chain in early Q1 2022.
+          button.btn.blue(style='opacity: .5; cursor:default;')
+            span TRANSFER
+            img(src='../../img/airdrop/icon_polygon.svg' alt='')
+          .question
+            .question__item
+              | When will the &ldquo;TRANSFER&rdquo; button become active?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | Our bridge from BSC to Polygon will be available at the beginning of Q1 2022, approximately at the end of January! The main release of the NFTCRAFT game will be launched soon, now you can see the progress of testing the final beta version on 
+                  a(href='https://app.nftcraft.game/') https://app.nftcraft.game/
+                  br
+                  |  * Your LootBox is now on the BSC network!
+                  br
+                  |   * You can only open your LootBox on the Polygon network, in the main release of the game!
+            .question__item
+              | How can I check if the NFT LootBox has been bridged from BSC to Polygon?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | You can check on 
+                  a(href='https://polygonscan.com/') https://polygonscan.com/
+                  | , by your wallet address from which the &quot;transfer&quot; was made, across our bridge! You should see the &quot;NFTCRAFT LOOTBOX&quot; NFT object in the ERC-721 section of tokens. At the same time, at the same wallet address in the BSC network, your ERC-721 NFT LootBox should have disappeared!
+            .question__item
+              | How can I open the NFT LootBox I received?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | You can only open LootBox in the NFTCRAFT game by the URL: 
+                  a(href='https://app.nftcraft.game/') https://app.nftcraft.game/
+                  br
+                  |  * You can only open your LootBox on the Polygon network! 
+                  br
+                  |  * You can only open your LootBox in the main release of the game!
+            .question__item
+              | How can I get another NFT LootBox?
+              .modal
+                // <div class="modal__label">How to participate in LootBoxes AirDrop?</div>
+                .modal__descr
+                  | From time to time, you can take part in new AirDrops! Check out the possibility to get LootBoxes here: 
+                  a(href='https://nftcraft.game/') https://nftcraft.game/
+      //
+        <div class="airdrop-box__days">
+        <span></span>
+        </div>
+  #work.airdrop-play.one
+    .container
+      .airdrop-play__img
+        img(src='../../img/airdrop/box_open.png' alt='')
+      .airdrop-play__content
+        h2.head OPEN LOOTBOX IN THE PLAY-TO-EARN GAME NFTCRAFT.GAME
+        .descr MAIN RELEASE WILL BE AVAILABLE IN 1Q 2022
+        a.btn(href='https://app.nftcraft.game/') GO TO DEMO
+        ul.list
+          li
+            | You cannot send LootBox to another wallet. Each NFT LootBox is assigned to only 1 wallet address!
+          li
+            | As soon as the lootbox is open &rarr; NFT ERC-721 tokens are added on your MetaMask wallet (dwarves, islands, and other game items)!
+          li
+            | You can only open your LootBox in the main release of the game, on the Polygon network!
+          li The price of an unopened LootBox up to $150
+          li The price of all NFTs inside LootBox up to $150
+  .airdrop-play.two
+    .container
+      .airdrop-play__content
+        h2.head TRADE NFTs FROM LOOTBOX ON MARKETPLACE*
+        .descr You can buy or sell any NFT item on the Marketplace
+        span.btn GO TO MARKETPLACE
+        ul.list
+          li
+            | To sell NFTs obtained from LootBox on the Marketplace, you first need to open LootBox in the game 
+            a(href='https://app.nftcraft.game') app.nftcraft.game
+          li
+            | 100% of NFT items in the game are backed by Ethereum! Collateral is stored on a secure smart contract: 
+            a(href='https://polygonscan.com/address/0x1ae8c689c013f596aec66471e8f5662f16b06642')  https://polygonscan.com/address/0x1ae8c689c013f596aec66471e8f5662f16b06642
+          li
+            | As soon as the LootBox is open &rarr; NFT ERC-721 tokens are added to your MetaMask wallet (dwarves, islands, and other valuable in-game items)
+          li
+            | The game runs on Polygon Chain! The BSC version of the game has not been launched, but it is possible to interact with the game and in-game items from the Binance Smart Chain
+        span(style='display: block; margin-top: 10px;') *Marketplace will be available in Main Release
+      .img
+        img(src='../../img/airdrop/card_1.png' alt='')
+        img(src='../../img/airdrop/card_2.png' alt='')
+        img(src='../../img/airdrop/card_3.png' alt='')
+  section#faq.faq
+    .container
+      h2.faq__head.head__new faq
+      .accordion
+        .trigger
+          input#checkbox-1.checked(type='checkbox' checked='')
+          label.checkbox(for='checkbox-1')
+            | How can I get LootBox to my wallet?
+            i
+          .content
+            ul
+              li
+                | 1. You need to connect your wallet from which you interacted with Venus staking vaults
+              li
+                | 2. Then click 
+                b Claim
+                |  LootBox
+              li
+                | 3. Confirms the transaction
+              li
+                | 4. After confirming the transaction, your address is verified with the Venus winners&apos; list of addresses
+              li
+                | 5. If your wallet address is among the winners - you will receive a &quot;LootBox&quot; in the form of NFT
+              li
+                | 6. Next, press the 
+                b TRANSFER
+                |  button to move the LootBox to the Polygon network
+              li
+                | 7. To open LootBox, go to 
+                a(href='https://app.nftcraft.game') app.nftcraft.game
+                |  and click the 
+                b Open LootBox
+                |  button (when Main Release will be available).
+              li
+                | 8. After opening LootBox - you will receive a collection of valuable NFT tokens ERC-721 to your wallet on the Polygon network.
+              li
+                | 9. After NFTs are added to your wallet, you can start playing and earning in the NFTCRAFT.GAME or sell NFTs on the Marketplace.
+        .trigger
+          input#checkbox-2.checked(type='checkbox')
+          label.checkbox(for='checkbox-2')
+            | How can I get a new LootBox? 
+            i
+          .content
+            ul
+              li
+                | 1. If you did not have time to take part in the current Airdrop, you can check the list of active AirDrop programs by the link 
+                a(href='https://nftcraft.game/') https://nftcraft.game/
+              li
+                | 2. Choose a suitable AirDrop program and register by following a few simple steps outlined in the terms and conditions. Or just subscribe to Telegram Bot 
+                a(href='https://t.me/nftcraftevent_bot') @nftcraftevent_bot
+              li
+                | 3. If you did everything correctly, you will receive a notification! Just wait for the new AirDrops to arrive!
+        .trigger
+          input#checkbox-3.checked(type='checkbox')
+          label.checkbox(for='checkbox-3')
+            | What is NFTcraft? 
+            i
+          .content
+            p
+              | NFTCRAFT.GAME is a play2earn NFT gaming metaverse on the Polygon blockchain. The main process in the game is the extraction of Radiant fuel by cyber dwarves to launch a rocket. The more Radiant a player mined, the more his share in the Ethereum pool. The game features a private economic model, where all NFT objects are fully backed by Ethereum. All funds, with the exception of a small commission, received from the sale of NFT and within the game are sent to the collateral pool. NFTcraft has a simple game interface, familiar to everyone from Minecraft. Find out more on 
+              a(href='https://nftcraft.game/')  https://nftcraft.game/
+        .trigger
+          input#checkbox-4.checked(type='checkbox')
+          label.checkbox(for='checkbox-4')
+            | What is DeFireX?
+            i
+          .content
+            p
+              | DeFireX is a group of smart contracts that works with leading DeFi projects for ensuring its users the most reliable and highly profitable level of liquidity mining at minimal fees. DeFireX relies on a fully transparent decentralized smart contract architecture.
+              br
+              br
+              |  The DeFireX platform provide everyone with the opportunity to join the profitable trending investment strategy of Yield Farming, based on the largest protocols on Ethereum, Binance Smart Chain, Polygon networks. Find out more on 
+              a(href='https://defirex.org/') https://defirex.org/
+        .trigger
+          input#checkbox-5.checked(type='checkbox')
+          label.checkbox(for='checkbox-5')
+            | Why is it interesting to play NFTcraft?
+            i
+          .content
+            p
+              | All characters, materials and basic game mechanics are backed by a real valuable and promising asset in the form of Ethereum, which, by the end of the main game cycle, can bring significant income to almost every active player. Also, each player will create his own part of the constantly evolving, diverse game world, a piece of which the player will forever obtain. The game has one and only goal - this is the extraction of Radiant fuel (in-game RAD token). 
+              br
+              br
+              |                                 Join a new unique game world, become its creators and heroes, and maybe then our real world will become a little better! Find out more on 
+              a(href='https://app.nftcraft.game/') https://app.nftcraft.game/
+//-   .airdrop-partners
+//-     .container
+//-       .airdrop-partners__img
+//-         img(src='../../img/airdrop/logo_craft.png' alt='')
+//-       .airdrop-partners__img
+//-         img(src='../../img/airdrop/logo_defirex.png' alt='')
+//-       .airdrop-partners__img
+//-         img(src='../../img/airdrop/logo_venus.png' alt='')

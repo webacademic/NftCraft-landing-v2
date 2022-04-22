@@ -23,3 +23,4 @@ $('.application__form').submit(function (event) {
         return false;
     }
 });
+
