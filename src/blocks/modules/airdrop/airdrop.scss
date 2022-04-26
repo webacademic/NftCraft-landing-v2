@@ -85,7 +85,8 @@
 
         &__head {
             position: relative;
-            font-family: "Seldom Scene", sans-serif;
+            font-family: "Play", sans-serif;
+            font-weight: 700;
             font-size: 64px;
             line-height: 140%;
             text-transform: uppercase;
@@ -104,9 +105,9 @@
 
         &__subtitle {
             position: relative;
-            font-family: "Seldom Scene", sans-serif;
+            font-family: "Play", sans-serif;
+            font-weight: 700;
             font-style: normal;
-            font-weight: normal;
             font-size: 36px;
             line-height: 140%;
             margin-bottom: 32px;
@@ -396,7 +397,8 @@
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                font-family: 'Seldom Scene', sans-serif;
+                font-family: 'Play', sans-serif;
+                font-weight: 700;
                 font-size: 36px;
                 line-height: 140%;
                 text-transform: uppercase;
@@ -819,7 +821,8 @@
 
         &__head {
             font-size: rem(48);
-            font-family: "Seldom Scene", sans-serif;
+            font-family: "Play", sans-serif;
+            font-weight: 700;
             line-height: 140%;
             text-align: center;
             margin-bottom: 53px;
