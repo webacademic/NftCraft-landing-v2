@@ -23,14 +23,24 @@ const paramsUsedBlockchain = [{
 const ContractLootboxAddress = '0x36d40Ff7392a7116CADefe38111A196d991418dF';
 // end config
 
-document.querySelector(".label__max__count").innerHTML = winnerList.length;
+const maxCount = document.querySelector(".label__max__count")
+if (maxCount) {
+    maxCount.innerHTML = winnerList.length;
+}
+
 
 function initNFTDistributor() {
     NFTDistributor = new web3.eth.Contract(JSON.parse(`[{"inputs":[{"internalType":"address","name":"token_","type":"address"},{"internalType":"bytes32","name":"merkleRoot_","type":"bytes32"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"},{"indexed":false,"internalType":"address","name":"account","type":"address"}],"name":"Claimed","type":"event"},{"inputs":[],"name":"acceptOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"changeOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"},{"internalType":"bytes32[]","name":"merkleProof","type":"bytes32[]"}],"name":"claim","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"isClaimed","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"merkleRoot","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"newUnlockedTime","type":"uint256"}],"name":"setUnlockedTime","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"contract IMintableToken","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalClaimed","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"unlockedTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}]`),
         NFTDistributorAdddress);
 }
 
-document.querySelector("#tokenAddress").innerHTML = ContractLootboxAddress;
+const tokenAddress = document.querySelector("#tokenAddress")
+
+if (tokenAddress) {
+    document.querySelector("#tokenAddress").innerHTML = ContractLootboxAddress;
+
+    checkChainId();
+}
 
 async function checkChainId() {
     const chain_id = await web3.eth.getChainId();
@@ -44,19 +54,22 @@ async function checkChainId() {
 
 }
 
-checkChainId();
+
 
 const anchors = document.querySelectorAll('.scroll__link');
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const blockID = anchor.getAttribute('href').substr(1);
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
-  }
+    if (anchors[0]) {
+        for (let anchor of anchors) {
+            anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const blockID = anchor.getAttribute('href').substr(1);
+              document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            });
+          }
+    } 
+  
 
 
 
@@ -116,47 +129,49 @@ const anchors = document.querySelectorAll('.scroll__link');
     const airdropBox = document.querySelector('.airdrop-box'),
         questionItems = document.querySelectorAll('.question__item'),
         claimButton = document.querySelector('#claimButton');
-
-        claimButton.addEventListener('click', async (e) => {
-          const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-          await checkChainId();
-  
-          initNFTDistributor();
-  
-          const found = winnerList.find(x => x.address.toLowerCase() === accounts[0].toLowerCase());
-          if (!found) {
-              alert(`Your address ${accounts[0]} don't have an airdrop`);
-              return;
-          }
-  
-          const isClaimed = await NFTDistributor.methods.isClaimed(found.index * 1).call();
-          if (isClaimed) {
-              alert(`Your address ${accounts[0]} already got an airdrop`);
-              return;
-          }
-  
-          await NFTDistributor.methods.claim(found.index, found.proofs).send({from: accounts[0]});
-      });
-
-
-    airdropBox.addEventListener('click', (e) => {
-        const target = e.target;
-        if (target.classList.contains('question__item')) {
-            target.classList.add('active');
-        } else {
-            for (let i = 0; i < questionItems.length; i++) {
-                questionItems[i].classList.remove('active');
-            }
-
+        if (claimButton) {
+            claimButton.addEventListener('click', async (e) => {
+                const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                await checkChainId();
+        
+                initNFTDistributor();
+        
+                const found = winnerList.find(x => x.address.toLowerCase() === accounts[0].toLowerCase());
+                if (!found) {
+                    alert(`Your address ${accounts[0]} don't have an airdrop`);
+                    return;
+                }
+        
+                const isClaimed = await NFTDistributor.methods.isClaimed(found.index * 1).call();
+                if (isClaimed) {
+                    alert(`Your address ${accounts[0]} already got an airdrop`);
+                    return;
+                }
+        
+                await NFTDistributor.methods.claim(found.index, found.proofs).send({from: accounts[0]});
+            });
+      
+      
+          airdropBox.addEventListener('click', (e) => {
+              const target = e.target;
+              if (target.classList.contains('question__item')) {
+                  target.classList.add('active');
+              } else {
+                  for (let i = 0; i < questionItems.length; i++) {
+                      questionItems[i].classList.remove('active');
+                  }
+      
+              }
+          });
+      
+          questionItems.forEach((item) => {
+              item.addEventListener('click', () => {
+                  for (let i = 0; i < questionItems.length; i++) {
+                      questionItems[i].classList.remove('active');
+                  }
+              });
+          });
         }
-    });
-
-    questionItems.forEach((item) => {
-        item.addEventListener('click', () => {
-            for (let i = 0; i < questionItems.length; i++) {
-                questionItems[i].classList.remove('active');
-            }
-        });
-    });
+        
     
 

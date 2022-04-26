@@ -1,0 +1,12 @@
+extends ../layouts/policy
+
+block variables
+	- const title = "NFTCraft - Privacy Policy";
+
+block content
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/policy/policy
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/main.js")
