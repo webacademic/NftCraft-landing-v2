@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: $desktopWidth) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bgColor;
+}
+
+main {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 rem(40);
+  max-width: $desktopWidth;
+
+  @media screen and (max-width: $desktopWidth) {
+    max-width: $smDesktopWidth;
+    padding: 0 30px;
+  }
+
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: $lgTableWidth;
+    padding: 0 16px;
+  }
+
+  @media screen and (max-width: $lgTableWidth) {
+    max-width: $tableWidth;
+    padding: 0 24px;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    max-width: 100%;
+    padding: 0 18px;
+  }
+}
+
+b {
+  color: $primaryColor;
+}
+
+a {
+  color: $mainFontColor;
+  text-decoration: none
+}
+
+.mobile {
+  display: none;
+}
+
+// component styles
+
+.com {
+  &-title {
+    color: $mainFontColor;
+    font-weight: 500;
+    font-size: rem(36);
+    line-height: 120%;
+    margin: 0 auto rem(1);
+    text-align: center;
+    b {
+      font-weight: 700;
+      color: $primaryColor;
+    }
+  }
+  &-descr {
+    font-weight: 400;
+    font-size: rem(24);
+    margin-bottom: rem(40);
+    b {
+      font-weight: 600;
+    }
+  }
+  &-btn {
+    &__fill, &__border {
+      cursor: pointer;
+      padding: rem(12) rem(16) rem(13);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: rem(5);
+      font-weight: 600;
+      font-size: rem(14);
+      line-height: rem(17);
+    }
+    &__fill {
+      background: $primaryColor;
+      border: $defaultBorder;
+      color: $defaultColor;
+    }
+    &__border {
+      position: relative;
+      background: transparent;
+      border: $primaryBorder;
+      color: $primaryColor;
+      transition: color .3s;
+      span {
+        z-index: 1;
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: $primaryColor;
+        transition: height .5s;
+      }
+      &:hover {
+        color: #fff;
+        &::before {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tableWidth) { 
+  .mobile {
+    display: block;
+  }
+  .com-btn {
+    &__border, &__fill {
+      font-size: 14px;
+    }
+  }
+}
+
+.offer {
+  height: 300vh;
+}
